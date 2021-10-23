@@ -12,7 +12,8 @@
 
   Senha da aula 1 do dia 18/10: #RumoAoPróximoNível
   Senha da aula 2 do dia 19/10: #Protagonistas
-
+  Senha da aula 3 do dia 20/10: #ImaginarConstruirTransformar
+  Senha da aula 4 do dia 21/10:
 
 -->
 
@@ -46,37 +47,71 @@
   </div>
 
 
-<h1>Daniele Pimenta</h1>
-<a href="https://github.com/daniandtheworld" target="_blank"><img src="images/github.svg" alt="github">@danieomundo</a>
+<h1 id="userName">Daniele Pimenta</h1>
+<a href="https://github.com/danieomundo" target="_blank"><img src="images/github.svg" alt="github">@danieomundo</a>
 
 
 <p>Studying to be a devil front-end.</p>
 
-<ul>
-  <li>
+<ul id="socialLinks">
+  <li class="youtube">
     <a href="https://www.youtube.com/channel/UC0QtiLHBqCprOq-6EddrSIg" target="_blank"> 
       <img src="images/youtube.svg" alt="youtube"/>
     </a>
   </li>  
- <li>
+  <li class="instagram">
    <a href="https://instagram.com/ddans_" target="_blank">
     <img src="images/instagram.svg" alt="instagram"/>
   </a>
-</li>
- <li>
+  </li>
+  <li class="facebook">
    <a href="https://www.facebook.com/danieomundo" target="_blank">
     <img src="images/facebook.svg" alt="facebook"/>
   </a>
-</li>
- <li>
+  </li>
+  <li class = "twitter">
    <a href="https://twitter.com/danieomundo" target="_blank">
     <img src="images/twitter.svg" alt="twitter"/>
   </a>
-</li>
+  </li>
 </ul>
 
 </div>
 </main>
+
+<!-- 
+  --- Anotações de Javascript --- 
+variável let permite modificações em seu valor;
+variável const é uma variável que não pode ser modificada.
+
+
+-->
+<script>
+
+const socialMedia = {
+    github: "danieomundo",
+    youtube: "channel/UC0QtiLHBqCprOq-6EddrSIg",
+    facebook: "danieomundo",
+    instagram: "ddans_",
+    twitter: "danieomundo"
+  }
+
+  function changesocialMedia() {
+    //document.getElementById('userName').textContent = 'Dani'
+     //userName.textContent = "Dani"
+    for (let li of socialLinks.children) {
+      const social = li.getAttribute('class')
+      //document.getElementById('socialLinks').textContent= 'danieomundo'
+      li.children[0].href=`https://${social}.com/${socialMedia[social]}`
+      //alert(li.children[0].href)
+    }    
+  }
+
+  changesocialMedia()
+
+</script>
+
+
 </body>
 </html>
 
