@@ -1,6 +1,6 @@
 # next-level-week
 
-Projeto do Rocketseat denominado Next Level Week - Mission: Origin, que está acontecendo desde o dia 18/10/2021 e vai até o dia 24/10.
+Projeto do Rocketseat denominado Next Level Week - Heat, que está acontecendo desde o dia 18/10/2021 e vai até o dia 24/10.
 
 Para esta aplicação, estamos utilizando HTML, CSS e Javascript!
 
