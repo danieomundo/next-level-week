@@ -47,30 +47,30 @@
   </div>
 
 
-<h1 id="userName">Daniele Pimenta</h1>
-<a href="https://github.com/danieomundo" target="_blank"><img src="images/github.svg" alt="github">@danieomundo</a>
+<h1 id="userName">Maykbrito</h1>
+<a href="https://github.com/maykbrito" target="_blank"><img src="images/github.svg" alt="github">@danieomundo</a>
 
 
 <p>Studying to be a devil front-end.</p>
 
 <ul id="socialLinks">
   <li class="youtube">
-    <a href="https://www.youtube.com/channel/UC0QtiLHBqCprOq-6EddrSIg" target="_blank"> 
+    <a href="https://www.youtube.com/maykbrito" target="_blank"> 
       <img src="images/youtube.svg" alt="youtube"/>
     </a>
   </li>  
   <li class="instagram">
-   <a href="https://instagram.com/ddans_" target="_blank">
+   <a href="https://instagram.com/maykbrito" target="_blank">
     <img src="images/instagram.svg" alt="instagram"/>
   </a>
   </li>
   <li class="facebook">
-   <a href="https://www.facebook.com/danieomundo" target="_blank">
+   <a href="https://www.facebook.com/maykbrito" target="_blank">
     <img src="images/facebook.svg" alt="facebook"/>
   </a>
   </li>
   <li class = "twitter">
-   <a href="https://twitter.com/danieomundo" target="_blank">
+   <a href="https://twitter.com/maykbrito" target="_blank">
     <img src="images/twitter.svg" alt="twitter"/>
   </a>
   </li>
@@ -97,13 +97,9 @@ const socialMedia = {
   }
 
   function changesocialMedia() {
-    //document.getElementById('userName').textContent = 'Dani'
-     //userName.textContent = "Dani"
     for (let li of socialLinks.children) {
       const social = li.getAttribute('class')
-      //document.getElementById('socialLinks').textContent= 'danieomundo'
       li.children[0].href=`https://${social}.com/${socialMedia[social]}`
-      //alert(li.children[0].href)
     }    
   }
 
